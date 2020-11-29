@@ -157,6 +157,7 @@ define('PS_ROUND_HALF_UP', 2);
 define('PS_ROUND_HALF_DOWN', 3);
 define('PS_ROUND_HALF_EVEN', 4);
 define('PS_ROUND_HALF_ODD', 5);
+define('PS_ROUND_FIVE_CENT', 6);
 
 /* Backward compatibility */
 define('PS_ROUND_HALF', PS_ROUND_HALF_UP);

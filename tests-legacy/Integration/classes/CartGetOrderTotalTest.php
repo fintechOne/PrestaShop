@@ -144,7 +144,11 @@ class CartGetOrderTotalTest extends IntegrationTestCase
                 $mode = PS_ROUND_HALF_ODD;
 
                 break;
-            default:
+            case 'five_cent':
+                $mode = PS_ROUND_FIVE_CENT;
+
+                break;
+                default:
                 throw new Exception(sprintf('Unknown rounding mode `%s`.', $modeStr));
         }
 

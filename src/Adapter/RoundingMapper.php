@@ -52,6 +52,7 @@ final class RoundingMapper
             PS_ROUND_HALF_DOWN => Rounding::ROUND_HALF_DOWN,
             PS_ROUND_HALF_EVEN => Rounding::ROUND_HALF_EVEN,
             PS_ROUND_HALF_ODD => Rounding::ROUND_HALF_EVEN, // Rounding::ROUND_HALF_ODD does not exist (never used)
+            PS_ROUND_FIVE_CENT => Rounding::ROUND_FIVE_CENT, // Swiss Style
         );
         if (!array_key_exists((int) $legacyRoundingMode, $roundModes)) {
             throw new \InvalidArgumentException('Unknown legacy rounding mode : ' . (int) $legacyRoundingMode);

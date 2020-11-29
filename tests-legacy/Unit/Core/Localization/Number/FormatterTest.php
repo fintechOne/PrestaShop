@@ -57,6 +57,9 @@ class FormatterTest extends TestCase
         if (!defined('PS_ROUND_HALF_ODD')) {
             define('PS_ROUND_HALF_ODD', 5);
         }
+        if (!defined('PS_ROUND_FIVE_CENT')) {
+            define('PS_ROUND_FIVE_CENT', 6);
+        }
     }
 
     /**

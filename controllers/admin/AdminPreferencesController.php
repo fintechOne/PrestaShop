@@ -72,6 +72,10 @@ class AdminPreferencesControllerCore extends AdminController
                     'value' => PS_ROUND_DOWN,
                     'name' => $this->trans('Round down to the nearest value', array(), 'Admin.Shopparameters.Feature'),
                 ),
+                array(
+                    'value' => PS_ROUND_FIVE_CENT,
+                    'name' => $this->trans('Five cent rounding Swiss style', array(), 'Admin.Shopparameters.Feature'),
+                ),
             );
             $activities1 = array(
                 0 => $this->trans('-- Please choose your main activity --', array(), 'Install'),

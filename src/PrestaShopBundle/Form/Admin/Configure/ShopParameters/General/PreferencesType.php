@@ -112,6 +112,7 @@ class PreferencesType extends TranslatorAwareType
                     'Round towards the next odd value' => $configuration->get('PS_ROUND_HALF_ODD'),
                     'Round up to the nearest value' => $configuration->get('PS_ROUND_UP'),
                     'Round down to the nearest value' => $configuration->get('PS_ROUND_DOWN'),
+                    'Five cent rounding Swiss style' => $configuration->get('PS_ROUND_FIVE_CENT'),
                 ],
             ])
             ->add('price_round_type', ChoiceType::class, [

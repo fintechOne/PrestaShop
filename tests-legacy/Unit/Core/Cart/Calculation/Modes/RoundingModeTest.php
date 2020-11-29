@@ -42,6 +42,7 @@ class RoundingModeTest extends AbstractCartCalculationTest
      * PS_ROUND_HALF_DOWN
      * PS_ROUND_HALF_EVEN
      * PS_ROUND_HALF_ODD
+     * PS_ROUND_FIVE_CENT
      */
     protected $defaultRoundingMode;
 
@@ -64,7 +65,7 @@ class RoundingModeTest extends AbstractCartCalculationTest
     /**
      * sets the default rounding mode
      *
-     * @param string $roundingMode PS_ROUND_UP|PS_ROUND_DOWN|PS_ROUND_HALF_UP|PS_ROUND_HALF_DOWN|PS_ROUND_HALF_DOWN|PS_ROUND_HALF_ODD
+     * @param string $roundingMode PS_ROUND_UP|PS_ROUND_DOWN|PS_ROUND_HALF_UP|PS_ROUND_HALF_DOWN|PS_ROUND_HALF_DOWN|PS_ROUND_HALF_ODD|PS_ROUND_FIVE_CENT
      */
     protected function setRoundingMode($roundingMode)
     {

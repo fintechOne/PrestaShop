@@ -55,7 +55,10 @@ class RoundingModeConfigurationFeatureContext extends AbstractConfigurationFeatu
             case 'half odd':
                 $this->setConfiguration('PS_PRICE_ROUND_MODE', PS_ROUND_HALF_ODD);
                 break;
-            default:
+            case 'five cent':
+                $this->setConfiguration('PS_PRICE_ROUND_MODE', PS_ROUND_FIVE_CENT);
+                break;
+                default:
                 throw new \Exception('Unknown config value for specific shop configuration for "rounding mode": ' . $value);
                 break;
         }
