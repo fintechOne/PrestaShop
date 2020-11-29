@@ -306,3 +306,6 @@ nb-configuration.xml
 ### Release creation ###
 tools/build/releases/*
 !tools/build/releases/.gitkeep
+
+### VScode Settings (by GRA)
+.vscode
