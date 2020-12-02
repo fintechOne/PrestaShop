@@ -2,3 +2,118 @@
  * Custom code goes here.
  * A template should always ship with an empty custom.css
  */
+
+ /*
+@media (max-width:991px){.carousel 
+    .carousel-item .caption{bottom:calc(50% - 2rem);left:10%}.carousel 
+    .carousel-item .caption .display-1{font-size:1.5rem}.carousel 
+    .carousel-item .caption-description{display:none}
+}@media (max-width:767px){.carousel 
+    .carousel-item .caption{bottom:calc(50% - 1.5rem)}.carousel 
+    .carousel-item .caption .display-1{font-size:1.0rem}.carousel 
+    .carousel-control .icon-next i,.carousel .carousel-control .icon-prev i{font-size:2rem}}
+*/
+
+
+.carousel{box-shadow:1px 1px 7px 0 rgba(0,0,0,.15);margin-bottom:1.5rem}.carousel .direction{z-index:auto}.carousel .carousel-inner{height:340px}.carousel .carousel-item{height:100%}.carousel .carousel-item img{width:100%;max-width:100%;height:auto}.carousel .carousel-item .caption{position:absolute;bottom:28px;left:90px;color:#fff;max-width:340px}.carousel .carousel-item .caption .caption-description p{color:#fff}.carousel .carousel-item figure{margin:0}.carousel .carousel-control{opacity:1}.carousel .carousel-control .icon-next:before,.carousel .carousel-control .icon-prev:before{content:""}.carousel .carousel-control .icon-next i,.carousel .carousel-control .icon-prev i{font-size:3.125rem;color:#fff}.carousel .carousel-control .icon-next:hover i,.carousel .carousel-control .icon-prev:hover i{color:#2fb5d2}.carousel .carousel-control .icon-prev{left:1rem}.carousel .carousel-control .icon-next{right:2rem}.carousel .carousel-control.left,.carousel .carousel-control.right{background:none}
+
+/* org
+@media (max-width:1199px){
+    .carousel .carousel-inner{height:auto}}
+@media (max-width:991px){
+    .carousel .carousel-item .caption{bottom:calc(50% - 2rem);left:10%}
+    .carousel .carousel-item .caption .display-1{font-size:2rem}
+    .carousel .carousel-item .caption-description{display:none}
+}
+@media (max-width:767px){
+    .carousel .carousel-item .caption{bottom:calc(50% - 1.5rem)}
+    .carousel .carousel-item .caption .display-1{font-size:1.5rem}
+    .carousel .carousel-control .icon-next i,
+    .carousel .carousel-control .icon-prev i{font-size:2rem}
+}
+*/
+
+/* 
+    15.11.2020  Für eine ansprechende Anzeige der Produktinfo auf dem Homepage-Slider/Carousel
+                optimiert auch für Tablet und Mobile. Wichtig: Je nach Textmenge kann sich die
+                Anzeige aus dem Slider-Bereich hinausverschieben. Immer kontrollieren und nie
+                zu lange Beschreibungen verwenden. Es soll ja "catchy" sein.
+*/
+@media (max-width:1199px){
+    .carousel .carousel-inner{height:auto}}
+    .carousel .carousel-item .caption{
+        left: 8%; 
+        top:calc(10%);
+    /*    bottom:calc(50% - 2.2rem); */
+        max-width: 30%;}
+    .carousel .carousel-item .caption .display-1{font-size:2.2rem}
+@media (max-width:991px){
+    .carousel .carousel-item .caption{
+        left: 8%; 
+        top:calc(10%);
+    /*     bottom:calc(50% - 1.5rem); */
+        max-width: 30%;}
+    .carousel .carousel-item .caption .display-1{font-size:1.5rem}
+    .carousel .carousel-item .caption-description{display:none}
+}
+@media (max-width:767px){
+    .carousel .carousel-item .caption{
+        left: 8%; 
+        top:calc(10%);
+    /*     bottom:calc(70% - 0.8rem); */
+        max-width: 30%;}
+    .carousel .carousel-item .caption .display-1{font-size:0.8rem}
+    .carousel .carousel-control .icon-next i,
+    .carousel .carousel-control .icon-prev i{font-size:2rem}
+}
+
+/* 
+    15.11.2020  Diese Optimierung sollte verhinden, dass der Menge-Button
+                (up/down arrows) beim Einkauf auf der Produkt-Detailseite
+                nach unten rutscht, da der "Add to Cart"-Button in english
+                zwar sehr schlank ist, nicht jedoch in deutsch und italienisch.
+                Mit etwas schlankeren "paddings" links/rechts sollte dies 
+                machbar sein. Padding top wird vermtulich übersteuert. 
+*/
+.product-quantity #quantity_wanted {
+    color: #232323;
+    background-color: #fff;
+    height: 2.75rem;
+    padding: .175rem .4rem;
+    width: 2.1rem;
+}
+.btn.btn-primary.add-to-cart {
+    font-size: .92rem;
+    font-weight: 600;
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.5rem;
+}
+.material-icons.shopping-cart {
+    font-size: 20px;
+    margin-right: .1rem;
+    font-weight: 400;
+}
+
+/* 
+    17.11.2020  Ohne diese Optimierung werden im "About-us" keine Bullets
+                aufgeführt in der Aufzählungsliste, zudem fehlt der linke
+                Einzug und der Text ist schwarz statt dunkelgrau. 
+*/
+.cms-block li {
+    display: list-item;
+    text-align: left;
+}
+.cms-block ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    font-size: .9375rem;
+    color: #7a7a7a;
+    font-weight: 400;
+}

@@ -257,6 +257,8 @@ function ps_round(value, places)
 		return floorf(value, places);
 	else if (method === 2)
 		return ps_round_half_up(value, places);
+	else if (method === 6)
+		return Math.round(value / 0.05) * 0.05;  // GRA Verantwortlich für 5 Rappen Rundung auf Produkterfassung/Preisdefinition Admin
 	else if (method == 3 || method == 4 || method == 5)
 	{
 		// From PHP Math.c
